@@ -1,6 +1,13 @@
 <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-  {{ with .Params.image }}
-    <img src="{{ . }}"></img>
+  <img src="{{ .Params.image }}" alt="" class="lazyload db w-100">
+  {{ if ((isset .Params "date")) }}
+  <p class="mid-gray lh-title mb2">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
   {{ end }}
+
 	<p class="link b dib black mb0">{{ .Title }}</p>
+
+<!--   {{ $image := .Params.image }}
+
+  <img src="{{ $image }}"> -->
+
 </a>
