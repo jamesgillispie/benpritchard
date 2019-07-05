@@ -7,6 +7,7 @@ import PaintingsPreview from "./cms-preview-templates/paintings";
 import ProductsPreview from "./cms-preview-templates/products";
 import ValuesPreview from "./cms-preview-templates/values";
 import ContactPreview from "./cms-preview-templates/contact";
+import AboutPreview from "./cms-preview-templates/about";
 
 
 // Example of creating a custom color widget
@@ -28,4 +29,5 @@ CMS.registerPreviewTemplate("paintings", PaintingsPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
+CMS.registerPreviewTemplate("about", AboutPreview);
 CMS.registerWidget("color", ColorControl);
