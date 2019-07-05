@@ -98,3 +98,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
 
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  series: "series"
